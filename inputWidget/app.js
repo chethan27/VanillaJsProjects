@@ -3,6 +3,7 @@ const button = document.querySelector('.numSubmit');
 const numbers = document.querySelector('.numbers');
 
 button.addEventListener('click', function() {
+    console.log(this)
     let num = ele.value;
     if(numbers.innerHTML) {
         numbers.innerHTML = "";

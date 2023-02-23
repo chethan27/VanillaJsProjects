@@ -5,6 +5,11 @@
     /* flex-direction: column; */
     border: 1px solid black;
     max-width: fit-content;
+    position: absolute;
+    left: 50%;  
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     /* margin-top: 200px;
     margin-left: 650px; */
 }
