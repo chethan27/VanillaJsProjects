@@ -1,0 +1,49 @@
+/* center 
+*/
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ele {
+    margin: 10px;
+}
+
+#search {
+    width: 200px;
+    height: 40px;
+}
+
+.container{
+    flex-wrap: wrap;
+    /* flex: 1; */
+    width: 90%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 20px;
+}
+
+.cardEle {
+    margin: 4px;
+}
+
+#image {
+    padding-top: 20%;
+    width: 100px;
+    height: 100px;
+}
