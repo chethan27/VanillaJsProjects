@@ -4,33 +4,35 @@ const url = 'https://jsonplaceholder.typicode.com/todos';
 let numTodos = 0;
 let storeData; 
 
-// async function getTodos() {
-//     const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-//     const data = await response.json();
-//     storeData = data;
-//     getCards();
-// }
-
-function getTodos() {
-    return new Promise((resolve, reject) => {
-        fetch('https://jsonplaceholder.typicode.com/todos')
-            .then(response => response.json())
-            .then(data => resolve(data))
-            .catch(error => reject(error));
-    })
+async function getTodos() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+    storeData = await response.json();
+    getCards();
 }
 
-getTodos()
-  .then(users => {
-    // console.log(users);
-    storeData = users;
-    getCards();
-  })
-  .catch(error => {
-    console.error(error);
-  });
+// function getTodos() {
+//     // return new Promise((resolve, reject) => {
+//         fetch('https://jsonplaceholder.typicode.com/todos')
+//             .then(response => response.json())
+//             .then(data => {
+//               storeData = data
+//               getCards();
+//             })
+//             .catch(error => reject(error));
+//     // })
+// }
 
-// getTodos();
+// getTodos()
+//   .then(users => {
+//     // console.log(users);
+//     storeData = users;
+//     getCards();
+//   })
+//   .catch(error => {
+//     console.error(error);
+//   });
+
+getTodos();
 
 function getCards() {
     let i = numTodos; 

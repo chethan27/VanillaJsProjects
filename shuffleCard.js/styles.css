@@ -11,9 +11,18 @@
 }
 
 .container {
+    flex-wrap: wrap;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
     margin-top: 20px;
+    margin-left: 100px;
     display: flex; 
     width: 80%vh;
+}
+
+.textStyle {
+    margin-top: 50%;
 }
 
 .card {
@@ -21,7 +30,7 @@
     flex-direction: column;
     border: 1px solid;
     width: 100px; 
-    height: 160px;
+    height: 140px;
     margin: 20px;
     text-align: center;
 }
